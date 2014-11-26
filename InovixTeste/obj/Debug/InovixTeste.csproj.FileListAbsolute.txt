@@ -1,0 +1,5 @@
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\InovixTeste\bin\Debug\InovixTeste.exe.config
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\InovixTeste\bin\Debug\InovixTeste.exe
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\InovixTeste\bin\Debug\InovixTeste.pdb
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\InovixTeste\obj\Debug\InovixTeste.exe
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\InovixTeste\obj\Debug\InovixTeste.pdb

@@ -46,7 +46,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\Customer\Reference.cs">
+    <Compile Include="Service References\KGBCustomer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\KGBFinanceiro\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -54,31 +59,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\Customer\Customer.wsdl" />
-    <None Include="Service References\Customer\InovixTeste.Customer.Customer.datasource">
+    <None Include="Service References\KGBCustomer\Customer.wsdl" />
+    <None Include="Service References\KGBCustomer\InovixTeste.KGBCustomer.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Customer\InovixTeste.Customer.GetCustomerByCpfResponse.datasource">
+    <None Include="Service References\KGBCustomer\InovixTeste.KGBCustomer.GetCustomerByCpfResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\KGBFinanceiro\Financeiro.wsdl" />
+    <None Include="Service References\KGBFinanceiro\Financeiro.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KGBFinanceiro\Financeiro1.xsd">
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Customer\" />
+    <WCFMetadataStorage Include="Service References\KGBCustomer\" />
+    <WCFMetadataStorage Include="Service References\KGBFinanceiro\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Customer\Customer.disco" />
+    <None Include="Service References\KGBCustomer\Customer.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Customer\configuration91.svcinfo" />
+    <None Include="Service References\KGBCustomer\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Customer\configuration.svcinfo" />
+    <None Include="Service References\KGBCustomer\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Customer\Reference.svcmap">
+    <None Include="Service References\KGBCustomer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBFinanceiro\Financeiro.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBFinanceiro\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBFinanceiro\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBFinanceiro\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

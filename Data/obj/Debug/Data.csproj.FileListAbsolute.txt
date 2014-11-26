@@ -1,0 +1,5 @@
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\Data\bin\Debug\Inovix.Data.dll
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\Data\bin\Debug\Inovix.Data.pdb
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\Data\obj\Debug\Inovix.Data.dll
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\Data\obj\Debug\Inovix.Data.pdb
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache

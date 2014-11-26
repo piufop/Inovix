@@ -25,10 +25,10 @@ namespace Inovix.Data
     }
 
     public enum StatusFinanceiro
-	{
-	   InadimplenteInterno = 1,
-       InadimplenteOutraOperadora = 2,
-       InadimplenteExterno = 3,
-       Apto=4      
-	}
+    {
+        InadimplenteInterno = 1,
+        InadimplenteOutraOperadora = 2,
+        InadimplenteExterno = 3,
+        Apto = 4
+    }
 }

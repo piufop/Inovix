@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InovixTeste.KGBCustomer;
 
 namespace InovixTeste
 {
@@ -10,9 +11,14 @@ namespace InovixTeste
     {
         static void Main(string[] args)
         {
-            Customer.CustomerWebServiceSoapClient c = new Customer.CustomerWebServiceSoapClient();
+            var customerService = new CustomerWebServiceSoapClient();
 
-            var xx = c.GetCustomerByCpf("322.391.544-38");
+            var financeiroService = new KGBFinanceiro.FinanceiroClient();
+            
+            var curtomer = customerService.GetCustomerByCpf("322.391.544-38");
+
+            var finaceiro = financeiroService.ObterStatusFinanceiroCliente("322.391.544-38");
+            
         }
     }
 }

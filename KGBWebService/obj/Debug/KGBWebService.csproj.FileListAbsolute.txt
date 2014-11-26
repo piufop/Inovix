@@ -1,0 +1,10 @@
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\KGBWebService.dll.config
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\KGBWebService.dll
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\KGBWebService.pdb
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\Inovix.Data.dll
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\Inovix.Data.pdb
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\obj\Debug\KGBWebService.csprojResolveAssemblyReference.cache
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\obj\Debug\KGBWebService.dll
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\obj\Debug\KGBWebService.pdb
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\KGBWebService.dll.CodeAnalysisLog.xml
+C:\Projetos\NET\Pos_Graduacao\Trabalho.NET\Inovix\KGBWebService\bin\KGBWebService.dll.lastcodeanalysissucceeded

@@ -68,21 +68,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Customer.asmx" />
-    <Content Include="Financeiro.svc" />
+    <Content Include="Asmx\Customer.asmx" />
+    <Content Include="Wcf\Financeiro.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.asmx.cs">
+    <Compile Include="Asmx\Customer.asmx.cs">
       <DependentUpon>Customer.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Financeiro.svc.cs">
+    <Compile Include="Wcf\Financeiro.svc.cs">
       <DependentUpon>Financeiro.svc</DependentUpon>
     </Compile>
-    <Compile Include="IFinanceiro.cs" />
+    <Compile Include="Wcf\IFinanceiro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +94,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
