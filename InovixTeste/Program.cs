@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using InovixTeste.KGBCustomer;
+﻿using InovixTeste.KGBCustomer;
+using InovixTeste.KGBFinanceiro;
 
 namespace InovixTeste
 {
@@ -13,10 +9,10 @@ namespace InovixTeste
         {
             var customerService = new CustomerWebServiceSoapClient();
 
-            var financeiroService = new KGBFinanceiro.FinanceiroClient();
+            var financeiroService = new FinanceiroClient();
             
             var curtomer = customerService.GetCustomerByCpf("322.391.544-38");
-
+             
             var finaceiro = financeiroService.ObterStatusFinanceiroCliente("322.391.544-38");
             
         }
