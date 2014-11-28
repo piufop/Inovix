@@ -8,6 +8,9 @@ namespace Inovix.Data
     public class Address
     {
         [DataMember]
+        public int IdAddress { get; set; }
+
+        [DataMember]
         public string City { get; set; }
 
         [DataMember]
@@ -20,6 +23,6 @@ namespace Inovix.Data
         public string Complement { get; set; }
 
         [DataMember]
-        public int CEP { get; set; }
+        public int Cep { get; set; }
     }
 }

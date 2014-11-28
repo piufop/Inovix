@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="Account.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="Fabrica\FabricaObjetos.cs" />
+    <Compile Include="Fabrica\FabricaAccount.cs" />
+    <Compile Include="Fabrica\FabricaCustomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

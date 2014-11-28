@@ -1,14 +1,15 @@
 ﻿using System.ServiceModel;
+using Inovix.Data;
 
 namespace KGBWebService.Wcf
 {
     [ServiceContract]
-    public interface IFinanceiro
+    public interface IAccountCustomer
     {
         [OperationContract]
         void DoWork();
 
         [OperationContract]
-        int ObterStatusFinanceiroCliente(string cpf);
+        Account ObterDadosConta(Customer customer);
     }
 }

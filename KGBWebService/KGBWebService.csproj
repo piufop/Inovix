@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Asmx\Customer.asmx" />
+    <Content Include="Wcf\AccountCustomer.svc" />
     <Content Include="Wcf\Financeiro.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -79,9 +80,13 @@
       <DependentUpon>Customer.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Wcf\AccountCustomer.svc.cs">
+      <DependentUpon>AccountCustomer.svc</DependentUpon>
+    </Compile>
     <Compile Include="Wcf\Financeiro.svc.cs">
       <DependentUpon>Financeiro.svc</DependentUpon>
     </Compile>
+    <Compile Include="Wcf\IAccountCustomer.cs" />
     <Compile Include="Wcf\IFinanceiro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

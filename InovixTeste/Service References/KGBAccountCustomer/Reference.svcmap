@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9262445-037e-482e-92a7-3a2fc88b24d6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51170/Wcf/AccountCustomer.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AccountCustomer.disco" MetadataType="Disco" ID="6bb5ba77-0f63-4169-9bd7-4a6d71035be1" SourceId="1" SourceUrl="http://localhost:51170/Wcf/AccountCustomer.svc?disco" />
+    <MetadataFile FileName="AccountCustomer.xsd" MetadataType="Schema" ID="4ff097e2-2e03-4191-bffb-04f9dd461575" SourceId="1" SourceUrl="http://localhost:51170/Wcf/AccountCustomer.svc?xsd=xsd1" />
+    <MetadataFile FileName="AccountCustomer1.xsd" MetadataType="Schema" ID="eb6f3b58-7237-4db7-be88-28ba60490706" SourceId="1" SourceUrl="http://localhost:51170/Wcf/AccountCustomer.svc?xsd=xsd2" />
+    <MetadataFile FileName="AccountCustomer.wsdl" MetadataType="Wsdl" ID="5740342d-aa83-4c42-8cc9-369c9ea0de53" SourceId="1" SourceUrl="http://localhost:51170/Wcf/AccountCustomer.svc?wsdl" />
+    <MetadataFile FileName="AccountCustomer2.xsd" MetadataType="Schema" ID="59dfff0f-1395-4f82-9bd5-a6bb48bce794" SourceId="1" SourceUrl="http://localhost:51170/Wcf/AccountCustomer.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

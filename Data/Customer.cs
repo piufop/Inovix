@@ -8,17 +8,19 @@ namespace Inovix.Data
     public class Customer
     {
         [DataMember]
+        public int IdCustomer { get; set; }
+
+        [DataMember]
         public string Name { get; set; }
 
         [DataMember]
         public string LastName { get; set; }
 
         [DataMember]
-        public string CPF { get; set; }
+        public string Cpf { get; set; }
 
         [DataMember]
-        public Address Address { get; set; }
-
+        public Address Address { get; set; } 
         [DataMember]
         public StatusFinanceiro StatusFinanceiro { get; set; }
 

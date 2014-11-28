@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Inovix.Data.Fabrica
 {
     /// <summary>
     /// Esta class simula o banco de dados
     /// </summary>
-    public static class FabricaObjetos
+    public static class FabricaCustomer
     {
         public static IEnumerable<Customer> ListaCustomers()
         {
@@ -13,59 +14,63 @@ namespace Inovix.Data.Fabrica
             {
                 new Customer
                 {
+                    IdCustomer = 1,
                     Name = "Hugo",
                     LastName = "Machado",
-                    CPF = "322.391.544-38",
+                    Cpf = "322.391.544-38",
                     Address = new Address
                     {
                         City = "Belo Horizonte",
                         Street = "Guaicurus",
                         Number = 10,
-                        CEP = 12345678
+                        Cep = 12345678
                     },
                     StatusFinanceiro = StatusFinanceiro.InadimplenteOutraOperadora
                 },
                 new Customer
                 {
+                    IdCustomer = 2,
                     Name = "Felipe",
                     LastName = "Bleson",
-                    CPF = "315.290.158-55",
+                    Cpf = "315.290.158-55",
                     Address = new Address
                     {
                         City = "Belo Horizonte",
                         Street = "Centro",
                         Number = 10,
-                        CEP = 12345678
+                        Cep = 12345678
                     },
                     StatusFinanceiro = StatusFinanceiro.InadimplenteExterno
                 },
                 new Customer
                 {
+                    IdCustomer = 3,
                     Name = "João",
                     LastName = "Thiago",
-                    CPF = "711.465.728-59",
+                    Cpf = "711.465.728-59",
                     Address = new Address
                     {
                         City = "Belo Horizonte",
                         Street = "Horto",
                         Number = 15,
-                        CEP = 12345676
+                        Cep = 12345676
                     },
                     StatusFinanceiro = StatusFinanceiro.InadimplenteInterno
-                },
+                    },
                 new Customer
                 {
+                    IdCustomer = 4,
                     Name = "Roberto",
                     LastName = "Thiago",
-                    CPF = "729.671.170-13",
+                    Cpf = "729.671.170-13",
                     Address = new Address
                     {
                         City = "Belo Horizonte",
                         Street = "Centro",
                         Number = 15,
-                        CEP = 12345678
+                        Cep = 12345678
                     },
-                    StatusFinanceiro = StatusFinanceiro.Apto
+                    StatusFinanceiro = StatusFinanceiro.Apto,                    
                 }
             };
         }

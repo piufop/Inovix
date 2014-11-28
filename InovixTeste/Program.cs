@@ -1,5 +1,8 @@
-﻿using InovixTeste.KGBCustomer;
+﻿using Inovix.Data;
+using InovixTeste.KGBAccountCustomer;
+using InovixTeste.KGBCustomer;
 using InovixTeste.KGBFinanceiro;
+
 
 namespace InovixTeste
 {
@@ -10,11 +13,13 @@ namespace InovixTeste
             var customerService = new CustomerWebServiceSoapClient();
 
             var financeiroService = new FinanceiroClient();
+
+            var accountCustomerClient = new AccountCustomerClient();
             
-            var curtomer = customerService.GetCustomerByCpf("322.391.544-38");
+            var customer = customerService.GetCustomerByCpf("322.391.544-38");
              
-            var finaceiro = financeiroService.ObterStatusFinanceiroCliente("322.391.544-38");
-            
+            var finaceiro = financeiroService.ObterStatusFinanceiroCliente("322.391.544-38");            
+
         }
     }
 }

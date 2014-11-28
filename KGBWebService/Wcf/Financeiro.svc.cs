@@ -13,12 +13,16 @@ namespace KGBWebService.Wcf
 
         public int ObterStatusFinanceiroCliente(string cpf)
         {
-            var customers = FabricaObjetos.ListaCustomers();
+            if (!string.IsNullOrEmpty(cpf))
+            {
+                var customers = FabricaCustomer.ListaCustomers();
 
-            var customer =  customers.FirstOrDefault(u => u.CPF.Equals(cpf));
+                var customer = customers.FirstOrDefault(u => u.Cpf.Equals(cpf));
 
-            if (customer != null)
-                return (int) customer.StatusFinanceiro;
+                if (customer != null)
+                    return (int)customer.StatusFinanceiro;
+            }
+
             return 0;
         }
     }

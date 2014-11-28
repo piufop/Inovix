@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="KGBWebService.Wcf.AccountCustomer" CodeBehind="AccountCustomer.svc.cs" %>
