@@ -47,6 +47,8 @@
     <Compile Include="Fabrica\FabricaAccount.cs" />
     <Compile Include="Fabrica\FabricaCustomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico\RepositorioAccont.cs" />
+    <Compile Include="Servico\RepositorioCustomer.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
