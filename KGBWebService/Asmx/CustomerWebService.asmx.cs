@@ -18,9 +18,9 @@ namespace KGBWebService.Asmx
         [WebMethod]
         public Customer GetCustomerByCpf(string cpf)
         {
-            Customer customer = null;
+            Customer customer = new Customer();
 
-            if (string.IsNullOrEmpty(cpf))
+            if (!string.IsNullOrEmpty(cpf))
             {
                 var customers = FabricaCustomer.ListaCustomers();
                 customer = customers.FirstOrDefault(u => u.Cpf.Equals(cpf));    

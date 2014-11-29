@@ -5,7 +5,7 @@ namespace Inovix.Data.Fabrica
 {
     public class FabricaAccount
     {
-        public static IEnumerable<Account> ListaAccounts()
+        public static List<Account> ListaAccounts()
         {
             return new List<Account>
             {

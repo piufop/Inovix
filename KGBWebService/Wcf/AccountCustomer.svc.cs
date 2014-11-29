@@ -20,7 +20,7 @@ namespace KGBWebService.Wcf
             Account account = null;
             if (customer!=null)
             {
-                account = FabricaAccount.ListaAccounts().FirstOrDefault(c => c.Customer.Equals(customer));
+                account = FabricaAccount.ListaAccounts().FirstOrDefault(c => c.Customer.Cpf == customer.Cpf);
             }
             return account;
         }

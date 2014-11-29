@@ -22,6 +22,8 @@ namespace InovixTeste.KGBCustomer {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
+        private int IdCustomerField;
+        
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
         
@@ -29,7 +31,7 @@ namespace InovixTeste.KGBCustomer {
         private string LastNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CPFField;
+        private string CpfField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private InovixTeste.KGBCustomer.Address AddressField;
@@ -46,6 +48,19 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int IdCustomer {
+            get {
+                return this.IdCustomerField;
+            }
+            set {
+                if ((this.IdCustomerField.Equals(value) != true)) {
+                    this.IdCustomerField = value;
+                    this.RaisePropertyChanged("IdCustomer");
+                }
+            }
+        }
+        
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string Name {
             get {
@@ -59,7 +74,7 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string LastName {
             get {
                 return this.LastNameField;
@@ -72,20 +87,20 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string CPF {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string Cpf {
             get {
-                return this.CPFField;
+                return this.CpfField;
             }
             set {
-                if ((object.ReferenceEquals(this.CPFField, value) != true)) {
-                    this.CPFField = value;
-                    this.RaisePropertyChanged("CPF");
+                if ((object.ReferenceEquals(this.CpfField, value) != true)) {
+                    this.CpfField = value;
+                    this.RaisePropertyChanged("Cpf");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
         public InovixTeste.KGBCustomer.Address Address {
             get {
                 return this.AddressField;
@@ -98,7 +113,7 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
         public InovixTeste.KGBCustomer.StatusFinanceiro StatusFinanceiro {
             get {
                 return this.StatusFinanceiroField;
@@ -130,6 +145,8 @@ namespace InovixTeste.KGBCustomer {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
+        private int IdAddressField;
+        
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CityField;
         
@@ -141,7 +158,7 @@ namespace InovixTeste.KGBCustomer {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ComplementField;
         
-        private int CEPField;
+        private int CepField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -153,7 +170,20 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int IdAddress {
+            get {
+                return this.IdAddressField;
+            }
+            set {
+                if ((this.IdAddressField.Equals(value) != true)) {
+                    this.IdAddressField = value;
+                    this.RaisePropertyChanged("IdAddress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string City {
             get {
                 return this.CityField;
@@ -166,7 +196,7 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string Street {
             get {
                 return this.StreetField;
@@ -179,7 +209,7 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
         public int Number {
             get {
                 return this.NumberField;
@@ -192,7 +222,7 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
         public string Complement {
             get {
                 return this.ComplementField;
@@ -205,15 +235,15 @@ namespace InovixTeste.KGBCustomer {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
-        public int CEP {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public int Cep {
             get {
-                return this.CEPField;
+                return this.CepField;
             }
             set {
-                if ((this.CEPField.Equals(value) != true)) {
-                    this.CEPField = value;
-                    this.RaisePropertyChanged("CEP");
+                if ((this.CepField.Equals(value) != true)) {
+                    this.CepField = value;
+                    this.RaisePropertyChanged("Cep");
                 }
             }
         }

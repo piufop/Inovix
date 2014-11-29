@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="04ae8041-f23c-4b43-b6aa-021f7749b24d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="008d768c-fb25-42dd-9ecb-7740ca7dddcb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:51170/Wcf/Financeiro.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Financeiro.xsd" MetadataType="Schema" ID="85c0c54d-79ee-4568-985c-cefcc61e4873" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd0" />
-    <MetadataFile FileName="Financeiro1.xsd" MetadataType="Schema" ID="da13b4d2-82bc-432b-ba8a-43c0247dc9d9" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd1" />
-    <MetadataFile FileName="Financeiro.wsdl" MetadataType="Wsdl" ID="35c99b1a-e263-4117-9fac-7a2bd5e03c30" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?wsdl" />
-    <MetadataFile FileName="Financeiro.disco" MetadataType="Disco" ID="8618f94e-ac29-4ee6-8424-091411e2b9cd" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?disco" />
+    <MetadataFile FileName="Financeiro.xsd" MetadataType="Schema" ID="54d16281-09df-4e5b-b478-a5f842217d88" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd0" />
+    <MetadataFile FileName="Financeiro1.xsd" MetadataType="Schema" ID="e72d326e-a263-48bc-b1d8-07d8a75489f4" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd1" />
+    <MetadataFile FileName="Financeiro.wsdl" MetadataType="Wsdl" ID="3868a559-387a-4f77-8d2a-b6020329b36b" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?wsdl" />
+    <MetadataFile FileName="Financeiro.disco" MetadataType="Disco" ID="d9948356-efff-4d41-a5c4-b57fd5c71b7d" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

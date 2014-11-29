@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Fl+2uK2dc7cfNylZKTYTUUsT8aU=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="gaIrL2oxN4BG3El9acAuMpPvpG8=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="CustomerWebServiceSoap">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="CustomerWebServiceSoap" contract="KGBCustomer.CustomerWebServiceSoap" bindingType="basicHttpBinding" address="http://localhost:51170/Asmx/Customer.asmx" bindingConfiguration="CustomerWebServiceSoap">
+    <endpoint name="CustomerWebServiceSoap" contract="KGBCustomer.CustomerWebServiceSoap" bindingType="basicHttpBinding" address="http://localhost:51170/Asmx/CustomerWebService.asmx" bindingConfiguration="CustomerWebServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:51170/Asmx/Customer.asmx</serializedValue>
+          <serializedValue>http://localhost:51170/Asmx/CustomerWebService.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

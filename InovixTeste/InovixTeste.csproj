@@ -61,9 +61,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Util\ConverteCustomer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\DataSources\Inovix.Data.Account.datasource" />
     <None Include="Service References\KGBAccountCustomer\AccountCustomer.wsdl" />
     <None Include="Service References\KGBAccountCustomer\AccountCustomer.xsd">
       <SubType>Designer</SubType>
@@ -74,10 +76,7 @@
     <None Include="Service References\KGBAccountCustomer\AccountCustomer2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\KGBAccountCustomer\InovixTeste.KGBAccountCustomer.Account.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KGBCustomer\Customer.wsdl" />
+    <None Include="Service References\KGBCustomer\CustomerWebService.wsdl" />
     <None Include="Service References\KGBCustomer\InovixTeste.KGBCustomer.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -101,19 +100,10 @@
     <WCFMetadataStorage Include="Service References\KGBFinanceiro\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBCustomer\Customer.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KGBCustomer\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KGBCustomer\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KGBCustomer\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{34f30979-5240-4098-ac37-4b05be014e7c}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\KGBFinanceiro\Financeiro.disco" />
@@ -146,10 +136,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{34f30979-5240-4098-ac37-4b05be014e7c}</Project>
-      <Name>Data</Name>
-    </ProjectReference>
+    <None Include="Service References\KGBCustomer\CustomerWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -68,7 +68,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Asmx\Customer.asmx" />
+    <Content Include="Asmx\CustomerWebService.asmx" />
     <Content Include="Wcf\AccountCustomer.svc" />
     <Content Include="Wcf\Financeiro.svc" />
     <Content Include="Web.config">
@@ -76,8 +76,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asmx\Customer.asmx.cs">
-      <DependentUpon>Customer.asmx</DependentUpon>
+    <Compile Include="Asmx\CustomerWebService.asmx.cs">
+      <DependentUpon>CustomerWebService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Wcf\AccountCustomer.svc.cs">
