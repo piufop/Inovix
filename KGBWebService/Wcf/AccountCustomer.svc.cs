@@ -6,21 +6,19 @@ using System.ServiceModel;
 using System.Text;
 using Inovix.Data;
 using Inovix.Data.Fabrica;
+using Inovix.Data.Servico;
 
 namespace KGBWebService.Wcf
 {    
     public class AccountCustomer : IAccountCustomer
     {
-        public void DoWork()
-        {
-        }
-
         public Account ObterDadosConta(Customer customer)
         {
             Account account = null;
             if (customer!=null)
             {
-                account = FabricaAccount.ListaAccounts().FirstOrDefault(c => c.Customer.Cpf == customer.Cpf);
+                var repositorioAccont = new RepositorioAccont();
+                account = repositorioAccont.RetornaAccounts().FirstOrDefault(c => c.Customer.Cpf == customer.Cpf);
             }
             return account;
         }

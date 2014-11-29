@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Inovix.Data.Fabrica;
+using Inovix.Data.Servico;
 
 namespace KGBWebService.Wcf
 {
@@ -7,15 +8,13 @@ namespace KGBWebService.Wcf
     // NOTE: In order to launch WCF Test Client for testing this service, please select Financeiro.svc or Financeiro.svc.cs at the Solution Explorer and start debugging.
     public class Financeiro : IFinanceiro
     {
-        public void DoWork()
-        {
-        }
-
         public int ObterStatusFinanceiroCliente(string cpf)
         {
             if (!string.IsNullOrEmpty(cpf))
             {
-                var customers = FabricaCustomer.ListaCustomers();
+                var repositorioCustomer = new RepositorioCustomer();
+
+                var customers = repositorioCustomer.RetornaUsuarios();
 
                 var customer = customers.FirstOrDefault(u => u.Cpf.Equals(cpf));
 

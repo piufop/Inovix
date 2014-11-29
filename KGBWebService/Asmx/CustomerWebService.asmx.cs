@@ -3,6 +3,7 @@ using System.Linq;
 using System.Web.Services;
 using Inovix.Data;
 using Inovix.Data.Fabrica;
+using Inovix.Data.Servico;
 
 namespace KGBWebService.Asmx
 {
@@ -20,9 +21,11 @@ namespace KGBWebService.Asmx
         {
             Customer customer = new Customer();
 
+            RepositorioCustomer repositorioCustomer = new RepositorioCustomer();
+
             if (!string.IsNullOrEmpty(cpf))
             {
-                var customers = FabricaCustomer.ListaCustomers();
+                var customers = repositorioCustomer.RetornaUsuarios();
                 customer = customers.FirstOrDefault(u => u.Cpf.Equals(cpf));    
             }
             return customer;

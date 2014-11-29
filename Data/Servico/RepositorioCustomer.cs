@@ -13,7 +13,7 @@ namespace Inovix.Data.Servico
     {
         public const string NomeArquivo = "D://DadosCustomer.xml";
 
-        public RepositorioCustomer()
+        public void InicializaRepositorioCustomer()
         {
             if (File.Exists(NomeArquivo))
             {
@@ -23,7 +23,7 @@ namespace Inovix.Data.Servico
             Salvar(FabricaCustomer.ListaCustomers().ToList());   
         }
 
-        public static List<Customer> RetornaUsuarios()
+        public List<Customer> RetornaUsuarios()
         {
             var usuarios = new List<Customer>();
             var ser = new XmlSerializer(typeof(List<Customer>));
@@ -44,7 +44,7 @@ namespace Inovix.Data.Servico
             return usuarios;
         }
 
-        private static void Salvar(List<Customer> usuarios)
+        private void Salvar(List<Customer> usuarios)
         {
             XmlSerializer ser = new XmlSerializer(typeof(List<Customer>));
             FileStream fs = new FileStream(NomeArquivo, FileMode.OpenOrCreate);
@@ -52,7 +52,7 @@ namespace Inovix.Data.Servico
             fs.Close();
         }
 
-        public static void Inserir(Customer customer)
+        public void Inserir(Customer customer)
         {
             List<Customer> listuUsuarios = RetornaUsuarios();
             int id = 1;
@@ -68,14 +68,14 @@ namespace Inovix.Data.Servico
             Salvar(listuUsuarios);
         }
 
-        public static void Editar(Customer customer)
+        public void Editar(Customer customer)
         {
             List<Customer> usuarios = RetornaUsuarios().Select(item => item.IdCustomer == customer.IdCustomer ? customer : item).ToList();
 
             Salvar(usuarios);
         }
 
-        public static void Deletar(int id)
+        public void Deletar(int id)
         {
             List<Customer> usuarios = RetornaUsuarios().ToList();
             usuarios.Remove(usuarios.First(u => u.IdCustomer == id));

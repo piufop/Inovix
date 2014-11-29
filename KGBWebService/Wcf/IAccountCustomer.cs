@@ -7,9 +7,6 @@ namespace KGBWebService.Wcf
     public interface IAccountCustomer
     {
         [OperationContract]
-        void DoWork();
-
-        [OperationContract]
         Account ObterDadosConta(Customer customer);
     }
 }

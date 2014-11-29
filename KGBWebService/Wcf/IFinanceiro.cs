@@ -6,9 +6,6 @@ namespace KGBWebService.Wcf
     public interface IFinanceiro
     {
         [OperationContract]
-        void DoWork();
-
-        [OperationContract]
         int ObterStatusFinanceiroCliente(string cpf);
     }
 }

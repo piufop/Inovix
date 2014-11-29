@@ -11,7 +11,7 @@ namespace Inovix.Data.Servico
     {
         public const string NomeArquivo = "D://DadosAccount.xml";
 
-        public RepositorioAccont()
+        public void InicializarRepositorioAccont()
         {
             if (File.Exists(NomeArquivo))
             {
@@ -21,7 +21,7 @@ namespace Inovix.Data.Servico
             Salvar(FabricaAccount.ListaAccounts().ToList());   
         }
 
-        public static List<Account> RetornaUsuarios()
+        public List<Account> RetornaAccounts()
         {
             var accounts = new List<Account>();
             var ser = new XmlSerializer(typeof(List<Account>));
@@ -42,7 +42,7 @@ namespace Inovix.Data.Servico
             return accounts;
         }
 
-        private static void Salvar(List<Account> accounts)
+        private void Salvar(List<Account> accounts)
         {
             XmlSerializer ser = new XmlSerializer(typeof(List<Account>));
             FileStream fs = new FileStream(NomeArquivo, FileMode.OpenOrCreate);
@@ -50,9 +50,9 @@ namespace Inovix.Data.Servico
             fs.Close();
         }
 
-        public static void Inserir(Account customer)
+        public void Inserir(Account customer)
         {
-            List<Account> listuUsuarios = RetornaUsuarios();
+            List<Account> listuUsuarios = RetornaAccounts();
             int id = 1;
 
             if (listuUsuarios.Any())
@@ -66,16 +66,16 @@ namespace Inovix.Data.Servico
             Salvar(listuUsuarios);
         }
 
-        public static void Editar(Account customer)
+        public void Editar(Account customer)
         {
-            List<Account> accounts = RetornaUsuarios().Select(item => item.IdAccount == customer.IdAccount ? customer : item).ToList();
+            List<Account> accounts = RetornaAccounts().Select(item => item.IdAccount == customer.IdAccount ? customer : item).ToList();
 
             Salvar(accounts);
         }
 
-        public static void Deletar(int id)
+        public void Deletar(int id)
         {
-            List<Account> accounts = RetornaUsuarios().ToList();
+            List<Account> accounts = RetornaAccounts().ToList();
             accounts.Remove(accounts.First(u => u.IdAccount == id));
             Salvar(accounts);
         }
