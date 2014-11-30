@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InovixTeste.KGBAccountCustomer {
+namespace Inovix.KGBAccountCustomer {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -29,12 +29,12 @@ namespace InovixTeste.KGBAccountCustomer {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IAccountCustomerChannel : InovixTeste.KGBAccountCustomer.IAccountCustomer, System.ServiceModel.IClientChannel {
+    public interface IAccountCustomerChannel : Inovix.KGBAccountCustomer.IAccountCustomer, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AccountCustomerClient : System.ServiceModel.ClientBase<InovixTeste.KGBAccountCustomer.IAccountCustomer>, InovixTeste.KGBAccountCustomer.IAccountCustomer {
+    public partial class AccountCustomerClient : System.ServiceModel.ClientBase<Inovix.KGBAccountCustomer.IAccountCustomer>, Inovix.KGBAccountCustomer.IAccountCustomer {
         
         public AccountCustomerClient() {
         }

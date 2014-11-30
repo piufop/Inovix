@@ -7,8 +7,8 @@
     <ProjectGuid>{C01A1D84-0831-4F09-A1B7-000FFD938E7D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InovixTeste</RootNamespace>
-    <AssemblyName>InovixTeste</AssemblyName>
+    <RootNamespace>Inovix</RootNamespace>
+    <AssemblyName>Inovix</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -77,10 +77,10 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\KGBCustomer\CustomerWebService.wsdl" />
-    <None Include="Service References\KGBCustomer\InovixTeste.KGBCustomer.Customer.datasource">
+    <None Include="Service References\KGBCustomer\Inovix.KGBCustomer.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\KGBCustomer\InovixTeste.KGBCustomer.GetCustomerByCpfResponse.datasource">
+    <None Include="Service References\KGBCustomer\Inovix.KGBCustomer.GetCustomerByCpfResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\KGBFinanceiro\Financeiro.wsdl" />

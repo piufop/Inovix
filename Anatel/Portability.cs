@@ -3,7 +3,7 @@ using System;
 
 namespace Anatel
 {
-    public class Portability : IPortability
+    public class Portability : MarshalByRefObject, IPortability
     {
         public PortabilityTicket SolicitarPortabilidadeNumerica()
         {

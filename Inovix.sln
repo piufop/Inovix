@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGBWebService", "KGBWebService\KGBWebService.csproj", "{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InovixTeste", "InovixTeste\InovixTeste.csproj", "{C01A1D84-0831-4F09-A1B7-000FFD938E7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inovix", "InovixTeste\Inovix.csproj", "{C01A1D84-0831-4F09-A1B7-000FFD938E7D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A} = {D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}
 	EndProjectSection

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InovixTeste.KGBCustomer {
+namespace Inovix.KGBCustomer {
     using System.Runtime.Serialization;
     using System;
     
@@ -34,9 +34,9 @@ namespace InovixTeste.KGBCustomer {
         private string CpfField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private InovixTeste.KGBCustomer.Address AddressField;
+        private Inovix.KGBCustomer.Address AddressField;
         
-        private InovixTeste.KGBCustomer.StatusFinanceiro StatusFinanceiroField;
+        private Inovix.KGBCustomer.StatusFinanceiro StatusFinanceiroField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -101,7 +101,7 @@ namespace InovixTeste.KGBCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public InovixTeste.KGBCustomer.Address Address {
+        public Inovix.KGBCustomer.Address Address {
             get {
                 return this.AddressField;
             }
@@ -114,7 +114,7 @@ namespace InovixTeste.KGBCustomer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
-        public InovixTeste.KGBCustomer.StatusFinanceiro StatusFinanceiro {
+        public Inovix.KGBCustomer.StatusFinanceiro StatusFinanceiro {
             get {
                 return this.StatusFinanceiroField;
             }
@@ -281,10 +281,10 @@ namespace InovixTeste.KGBCustomer {
         
         // CODEGEN: Generating message contract since element name cpf from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCustomerByCpf", ReplyAction="*")]
-        InovixTeste.KGBCustomer.GetCustomerByCpfResponse GetCustomerByCpf(InovixTeste.KGBCustomer.GetCustomerByCpfRequest request);
+        Inovix.KGBCustomer.GetCustomerByCpfResponse GetCustomerByCpf(Inovix.KGBCustomer.GetCustomerByCpfRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCustomerByCpf", ReplyAction="*")]
-        System.Threading.Tasks.Task<InovixTeste.KGBCustomer.GetCustomerByCpfResponse> GetCustomerByCpfAsync(InovixTeste.KGBCustomer.GetCustomerByCpfRequest request);
+        System.Threading.Tasks.Task<Inovix.KGBCustomer.GetCustomerByCpfResponse> GetCustomerByCpfAsync(Inovix.KGBCustomer.GetCustomerByCpfRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -294,12 +294,12 @@ namespace InovixTeste.KGBCustomer {
     public partial class GetCustomerByCpfRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCustomerByCpf", Namespace="http://tempuri.org/", Order=0)]
-        public InovixTeste.KGBCustomer.GetCustomerByCpfRequestBody Body;
+        public Inovix.KGBCustomer.GetCustomerByCpfRequestBody Body;
         
         public GetCustomerByCpfRequest() {
         }
         
-        public GetCustomerByCpfRequest(InovixTeste.KGBCustomer.GetCustomerByCpfRequestBody Body) {
+        public GetCustomerByCpfRequest(Inovix.KGBCustomer.GetCustomerByCpfRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -328,12 +328,12 @@ namespace InovixTeste.KGBCustomer {
     public partial class GetCustomerByCpfResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCustomerByCpfResponse", Namespace="http://tempuri.org/", Order=0)]
-        public InovixTeste.KGBCustomer.GetCustomerByCpfResponseBody Body;
+        public Inovix.KGBCustomer.GetCustomerByCpfResponseBody Body;
         
         public GetCustomerByCpfResponse() {
         }
         
-        public GetCustomerByCpfResponse(InovixTeste.KGBCustomer.GetCustomerByCpfResponseBody Body) {
+        public GetCustomerByCpfResponse(Inovix.KGBCustomer.GetCustomerByCpfResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -345,23 +345,23 @@ namespace InovixTeste.KGBCustomer {
     public partial class GetCustomerByCpfResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public InovixTeste.KGBCustomer.Customer GetCustomerByCpfResult;
+        public Inovix.KGBCustomer.Customer GetCustomerByCpfResult;
         
         public GetCustomerByCpfResponseBody() {
         }
         
-        public GetCustomerByCpfResponseBody(InovixTeste.KGBCustomer.Customer GetCustomerByCpfResult) {
+        public GetCustomerByCpfResponseBody(Inovix.KGBCustomer.Customer GetCustomerByCpfResult) {
             this.GetCustomerByCpfResult = GetCustomerByCpfResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface CustomerWebServiceSoapChannel : InovixTeste.KGBCustomer.CustomerWebServiceSoap, System.ServiceModel.IClientChannel {
+    public interface CustomerWebServiceSoapChannel : Inovix.KGBCustomer.CustomerWebServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CustomerWebServiceSoapClient : System.ServiceModel.ClientBase<InovixTeste.KGBCustomer.CustomerWebServiceSoap>, InovixTeste.KGBCustomer.CustomerWebServiceSoap {
+    public partial class CustomerWebServiceSoapClient : System.ServiceModel.ClientBase<Inovix.KGBCustomer.CustomerWebServiceSoap>, Inovix.KGBCustomer.CustomerWebServiceSoap {
         
         public CustomerWebServiceSoapClient() {
         }
@@ -383,28 +383,28 @@ namespace InovixTeste.KGBCustomer {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InovixTeste.KGBCustomer.GetCustomerByCpfResponse InovixTeste.KGBCustomer.CustomerWebServiceSoap.GetCustomerByCpf(InovixTeste.KGBCustomer.GetCustomerByCpfRequest request) {
+        Inovix.KGBCustomer.GetCustomerByCpfResponse Inovix.KGBCustomer.CustomerWebServiceSoap.GetCustomerByCpf(Inovix.KGBCustomer.GetCustomerByCpfRequest request) {
             return base.Channel.GetCustomerByCpf(request);
         }
         
-        public InovixTeste.KGBCustomer.Customer GetCustomerByCpf(string cpf) {
-            InovixTeste.KGBCustomer.GetCustomerByCpfRequest inValue = new InovixTeste.KGBCustomer.GetCustomerByCpfRequest();
-            inValue.Body = new InovixTeste.KGBCustomer.GetCustomerByCpfRequestBody();
+        public Inovix.KGBCustomer.Customer GetCustomerByCpf(string cpf) {
+            Inovix.KGBCustomer.GetCustomerByCpfRequest inValue = new Inovix.KGBCustomer.GetCustomerByCpfRequest();
+            inValue.Body = new Inovix.KGBCustomer.GetCustomerByCpfRequestBody();
             inValue.Body.cpf = cpf;
-            InovixTeste.KGBCustomer.GetCustomerByCpfResponse retVal = ((InovixTeste.KGBCustomer.CustomerWebServiceSoap)(this)).GetCustomerByCpf(inValue);
+            Inovix.KGBCustomer.GetCustomerByCpfResponse retVal = ((Inovix.KGBCustomer.CustomerWebServiceSoap)(this)).GetCustomerByCpf(inValue);
             return retVal.Body.GetCustomerByCpfResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<InovixTeste.KGBCustomer.GetCustomerByCpfResponse> InovixTeste.KGBCustomer.CustomerWebServiceSoap.GetCustomerByCpfAsync(InovixTeste.KGBCustomer.GetCustomerByCpfRequest request) {
+        System.Threading.Tasks.Task<Inovix.KGBCustomer.GetCustomerByCpfResponse> Inovix.KGBCustomer.CustomerWebServiceSoap.GetCustomerByCpfAsync(Inovix.KGBCustomer.GetCustomerByCpfRequest request) {
             return base.Channel.GetCustomerByCpfAsync(request);
         }
         
-        public System.Threading.Tasks.Task<InovixTeste.KGBCustomer.GetCustomerByCpfResponse> GetCustomerByCpfAsync(string cpf) {
-            InovixTeste.KGBCustomer.GetCustomerByCpfRequest inValue = new InovixTeste.KGBCustomer.GetCustomerByCpfRequest();
-            inValue.Body = new InovixTeste.KGBCustomer.GetCustomerByCpfRequestBody();
+        public System.Threading.Tasks.Task<Inovix.KGBCustomer.GetCustomerByCpfResponse> GetCustomerByCpfAsync(string cpf) {
+            Inovix.KGBCustomer.GetCustomerByCpfRequest inValue = new Inovix.KGBCustomer.GetCustomerByCpfRequest();
+            inValue.Body = new Inovix.KGBCustomer.GetCustomerByCpfRequestBody();
             inValue.Body.cpf = cpf;
-            return ((InovixTeste.KGBCustomer.CustomerWebServiceSoap)(this)).GetCustomerByCpfAsync(inValue);
+            return ((Inovix.KGBCustomer.CustomerWebServiceSoap)(this)).GetCustomerByCpfAsync(inValue);
         }
     }
 }

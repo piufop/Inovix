@@ -1,9 +1,9 @@
 ﻿using Inovix.Data.Servico;
-using InovixTeste.KGBAccountCustomer;
-using InovixTeste.KGBFinanceiro;
-using InovixTeste.Util;
+using Inovix.KGBAccountCustomer;
+using Inovix.KGBFinanceiro;
+using Inovix.Util;
 
-namespace InovixTeste
+namespace Inovix
 {
     public class Program
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InovixTeste.KGBFinanceiro {
+namespace Inovix.KGBFinanceiro {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -29,12 +29,12 @@ namespace InovixTeste.KGBFinanceiro {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IFinanceiroChannel : InovixTeste.KGBFinanceiro.IFinanceiro, System.ServiceModel.IClientChannel {
+    public interface IFinanceiroChannel : Inovix.KGBFinanceiro.IFinanceiro, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class FinanceiroClient : System.ServiceModel.ClientBase<InovixTeste.KGBFinanceiro.IFinanceiro>, InovixTeste.KGBFinanceiro.IFinanceiro {
+    public partial class FinanceiroClient : System.ServiceModel.ClientBase<Inovix.KGBFinanceiro.IFinanceiro>, Inovix.KGBFinanceiro.IFinanceiro {
         
         public FinanceiroClient() {
         }
