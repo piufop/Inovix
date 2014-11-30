@@ -20,8 +20,6 @@ namespace YUMWebService
 
             if (!string.IsNullOrEmpty(customer.Cpf))
             {
-                var customerService = new KGBCustomer.CustomerWebServiceSoapClient();
-                var customers = customerService.GetCustomerByCpf(customer.Cpf);
                 RepositorioCustomer repositorioCustomer = new RepositorioCustomer();
                 return repositorioCustomer.Editar(customer);
             }
