@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APT", "APT\APT.csproj", "{45946FE9-598B-4C21-8D29-7C7A7729DE31}"
 EndProject
@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YUMWebService", "YUMWebServ
 	ProjectSection(ProjectDependencies) = postProject
 		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A} = {D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anatel", "Anatel\Anatel.csproj", "{74D81547-FA91-438A-B6C9-2C171351AC5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D3617245-D541-4022-9854-EB649FF85E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3617245-D541-4022-9854-EB649FF85E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3617245-D541-4022-9854-EB649FF85E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
