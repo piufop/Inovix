@@ -9,17 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGBWebService", "KGBWebService\KGBWebService.csproj", "{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inovix", "InovixTeste\Inovix.csproj", "{C01A1D84-0831-4F09-A1B7-000FFD938E7D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A} = {D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YUMWebService", "YUMWebService\YUMWebService.csproj", "{D3617245-D541-4022-9854-EB649FF85E23}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A} = {D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anatel", "Anatel\Anatel.csproj", "{74D81547-FA91-438A-B6C9-2C171351AC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inovix", "Inovix\Inovix.csproj", "{C01A1D84-0831-4F09-A1B7-000FFD938E7D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A} = {D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +39,6 @@ Global
 		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7CDAD6A-0F80-4DA1-9117-BC2AC9373D9A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3617245-D541-4022-9854-EB649FF85E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3617245-D541-4022-9854-EB649FF85E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3617245-D541-4022-9854-EB649FF85E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74D81547-FA91-438A-B6C9-2C171351AC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01A1D84-0831-4F09-A1B7-000FFD938E7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

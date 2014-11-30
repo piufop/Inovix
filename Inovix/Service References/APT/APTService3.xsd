@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Inovix.Data.Portability" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Inovix.Data.Portability" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50731/APTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="PortabilityTicket">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" type="tns:PortabilityError" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Status" type="tns:PortabilityStatus" />
+      <xs:element minOccurs="0" name="TimeStamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PortabilityTicket" nillable="true" type="tns:PortabilityTicket" />
+  <xs:simpleType name="PortabilityError">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoError" />
+      <xs:enumeration value="MissingCustomerData">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MissingAddressData">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">200</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PortabilityError" nillable="true" type="tns:PortabilityError" />
+  <xs:simpleType name="PortabilityStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PortabilityStatus" nillable="true" type="tns:PortabilityStatus" />
+</xs:schema>

@@ -1,6 +1,5 @@
-﻿using System.Linq;
-using Inovix.Data.Fabrica;
-using Inovix.Data.Servico;
+﻿using Inovix.Data.Servico;
+using System.Linq;
 
 namespace KGBWebService.Wcf
 {

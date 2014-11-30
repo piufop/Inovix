@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Services;
-using Inovix.Data;
-using Inovix.Data.Fabrica;
+﻿using Inovix.Data;
 using Inovix.Data.Servico;
+using System.ComponentModel;
+using System.Web.Services;
 
 namespace YUMWebService
 {
@@ -14,8 +10,8 @@ namespace YUMWebService
     /// </summary>
     [WebService(Namespace = "http://yum.org/UpdateCustomer")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
-    [System.ComponentModel.ToolboxItem(false)]
-    public class YumCustomer : System.Web.Services.WebService
+    [ToolboxItem(false)]
+    public class YumCustomer : WebService
     {
 
         [WebMethod]

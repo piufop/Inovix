@@ -4,7 +4,7 @@ using Inovix.Data.Portability;
 using System;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
-using System.Runtime.Remoting.Channels.Tcp;
+using System.Runtime.Remoting.Channels.Http;
 
 namespace APT
 {
@@ -12,8 +12,32 @@ namespace APT
     {
         public PortabilityTicket SolicitarBilhetePortabilidade(Customer customer, Account account)
         {
-            
-            return new PortabilityTicket();
+            ValidateCustomer(customer);
+
+            ValidateAccount(account);
+
+            HttpChannel channel = new HttpChannel();
+            ChannelServices.RegisterChannel(channel, false);
+
+            RemotingConfiguration.RegisterWellKnownClientType(
+                Type.GetType("Anatel.Portability, Anatel"),
+                "http://localhost:8080/solicitarPortabilidadeNumerica");
+
+            Portability portability = new Portability();
+
+            PortabilityTicket ticket = portability.SolicitarPortabilidadeNumerica();
+
+            return ticket;
+        }
+
+        private void ValidateAccount(Account account)
+        {
+            // Validation stuff.
+        }
+
+        private void ValidateCustomer(Customer customer)
+        {
+            // Validation stuff.
         }
     }
 }

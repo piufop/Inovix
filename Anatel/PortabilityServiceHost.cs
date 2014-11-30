@@ -11,9 +11,12 @@ namespace Anatel
         {
             Console.WriteLine("Anatel Portability Service is running...");
 
-            Portability port = new Portability();
             TcpChannel tcpChannel = new TcpChannel(8080);
             ChannelServices.RegisterChannel(tcpChannel, false);
+
+            Portability portability = new Portability();
+            
+            ObjRef portRef = RemotingServices.Marshal(portability, "solicitarPortabilidadeNumerica");
             RemotingConfiguration.RegisterWellKnownServiceType(typeof(Portability), "SolicitarPortabilidadeNumerica", WellKnownObjectMode.Singleton);
 
             Console.ReadKey();

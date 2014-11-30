@@ -15,7 +15,7 @@ namespace Inovix.KGBCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://kgb.org/GetCustomer")]
     [System.SerializableAttribute()]
     public partial class Customer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -138,7 +138,7 @@ namespace Inovix.KGBCustomer {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Address", Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Address", Namespace="http://kgb.org/GetCustomer")]
     [System.SerializableAttribute()]
     public partial class Address : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -259,7 +259,7 @@ namespace Inovix.KGBCustomer {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="StatusFinanceiro", Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="StatusFinanceiro", Namespace="http://kgb.org/GetCustomer")]
     public enum StatusFinanceiro : int {
         
         [System.Runtime.Serialization.EnumMemberAttribute()]
@@ -276,14 +276,14 @@ namespace Inovix.KGBCustomer {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="KGBCustomer.CustomerWebServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://kgb.org/GetCustomer", ConfigurationName="KGBCustomer.CustomerWebServiceSoap")]
     public interface CustomerWebServiceSoap {
         
-        // CODEGEN: Generating message contract since element name cpf from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCustomerByCpf", ReplyAction="*")]
+        // CODEGEN: Generating message contract since element name cpf from namespace http://kgb.org/GetCustomer is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://kgb.org/GetCustomer/GetCustomerByCpf", ReplyAction="*")]
         Inovix.KGBCustomer.GetCustomerByCpfResponse GetCustomerByCpf(Inovix.KGBCustomer.GetCustomerByCpfRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCustomerByCpf", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://kgb.org/GetCustomer/GetCustomerByCpf", ReplyAction="*")]
         System.Threading.Tasks.Task<Inovix.KGBCustomer.GetCustomerByCpfResponse> GetCustomerByCpfAsync(Inovix.KGBCustomer.GetCustomerByCpfRequest request);
     }
     
@@ -293,7 +293,7 @@ namespace Inovix.KGBCustomer {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetCustomerByCpfRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCustomerByCpf", Namespace="http://tempuri.org/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCustomerByCpf", Namespace="http://kgb.org/GetCustomer", Order=0)]
         public Inovix.KGBCustomer.GetCustomerByCpfRequestBody Body;
         
         public GetCustomerByCpfRequest() {
@@ -307,7 +307,7 @@ namespace Inovix.KGBCustomer {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://kgb.org/GetCustomer")]
     public partial class GetCustomerByCpfRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
@@ -327,7 +327,7 @@ namespace Inovix.KGBCustomer {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetCustomerByCpfResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCustomerByCpfResponse", Namespace="http://tempuri.org/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCustomerByCpfResponse", Namespace="http://kgb.org/GetCustomer", Order=0)]
         public Inovix.KGBCustomer.GetCustomerByCpfResponseBody Body;
         
         public GetCustomerByCpfResponse() {
@@ -341,7 +341,7 @@ namespace Inovix.KGBCustomer {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://kgb.org/GetCustomer")]
     public partial class GetCustomerByCpfResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
