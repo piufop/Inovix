@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using Inovix.Data;
 using Inovix.Data.Fabrica;
+using Inovix.Data.Servico;
 
 namespace YUMWebService
 {
@@ -14,8 +15,6 @@ namespace YUMWebService
     [WebService(Namespace = "http://yum.org/UpdateCustomer")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    // [System.Web.Script.Services.ScriptService]
     public class YumCustomer : System.Web.Services.WebService
     {
 
@@ -26,11 +25,11 @@ namespace YUMWebService
             if (!string.IsNullOrEmpty(customer.Cpf))
             {
                 var customerService = new KGBCustomer.CustomerWebServiceSoapClient();
-                var customers = customerService.GetCustomerByCpf(customer.Cpf);//TODO Criar para armazenar dados na base
-
+                var customers = customerService.GetCustomerByCpf(customer.Cpf);
+                RepositorioCustomer repositorioCustomer = new RepositorioCustomer();
+                return repositorioCustomer.Editar(customer);
             }
-            return false;//TODO Trocar o retorno
-
+            return false;
         }
     }
 }

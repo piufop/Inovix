@@ -68,11 +68,18 @@ namespace Inovix.Data.Servico
             Salvar(listuUsuarios);
         }
 
-        public void Editar(Customer customer)
+        public bool Editar(Customer customer)
         {
-            List<Customer> usuarios = RetornaUsuarios().Select(item => item.IdCustomer == customer.IdCustomer ? customer : item).ToList();
-
-            Salvar(usuarios);
+            try
+            {
+                List<Customer> usuarios = RetornaUsuarios().Select(item => item.IdCustomer == customer.IdCustomer ? customer : item).ToList();
+                Salvar(usuarios);
+                return true;                
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public void Deletar(int id)
