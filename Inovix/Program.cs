@@ -17,6 +17,7 @@ namespace Inovix
             var financeiroService = new FinanceiroClient();
             var accountCustomerClient = new AccountCustomerClient();
             var customerData = new ConverteCustomer();
+            var yum = new YumService.YumCustomerSoapClient();
 
             var customer = customerData.ConverteCustomerData(customerService.GetCustomerByCpf("322.391.544-38"));
 
@@ -28,6 +29,8 @@ namespace Inovix
                 {
                     APTServiceClient aptClient = new APTServiceClient();
                     aptClient.SolicitarBilhetePortabilidade(customer, account);
+
+                    //yum.UpdateCustomer((YumService.Customer)customer);
                 }
                 else
                 {

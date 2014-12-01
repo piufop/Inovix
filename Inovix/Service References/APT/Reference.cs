@@ -20,6 +20,12 @@ namespace Inovix.APT {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAPTService/SolicitarBilhetePortabilidade", ReplyAction="http://tempuri.org/IAPTService/SolicitarBilhetePortabilidadeResponse")]
         System.Threading.Tasks.Task<Inovix.Data.Portability.PortabilityTicket> SolicitarBilhetePortabilidadeAsync(Inovix.Data.Customer customer, Inovix.Data.Account account);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAPTService/ObterRespostaAnatel", ReplyAction="http://tempuri.org/IAPTService/ObterRespostaAnatelResponse")]
+        Inovix.Data.Portability.PortabilityStatus ObterRespostaAnatel(System.Guid ticketId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAPTService/ObterRespostaAnatel", ReplyAction="http://tempuri.org/IAPTService/ObterRespostaAnatelResponse")]
+        System.Threading.Tasks.Task<Inovix.Data.Portability.PortabilityStatus> ObterRespostaAnatelAsync(System.Guid ticketId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +61,14 @@ namespace Inovix.APT {
         
         public System.Threading.Tasks.Task<Inovix.Data.Portability.PortabilityTicket> SolicitarBilhetePortabilidadeAsync(Inovix.Data.Customer customer, Inovix.Data.Account account) {
             return base.Channel.SolicitarBilhetePortabilidadeAsync(customer, account);
+        }
+        
+        public Inovix.Data.Portability.PortabilityStatus ObterRespostaAnatel(System.Guid ticketId) {
+            return base.Channel.ObterRespostaAnatel(ticketId);
+        }
+        
+        public System.Threading.Tasks.Task<Inovix.Data.Portability.PortabilityStatus> ObterRespostaAnatelAsync(System.Guid ticketId) {
+            return base.Channel.ObterRespostaAnatelAsync(ticketId);
         }
     }
 }

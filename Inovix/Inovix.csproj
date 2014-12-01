@@ -66,6 +66,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\YumService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Util\ConverteCustomer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -109,27 +114,53 @@
     <None Include="Service References\KGBFinanceiro\Financeiro1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\YumService\Inovix.YumService.UpdateCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\YumService\YumCustomer.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{34f30979-5240-4098-ac37-4b05be014e7c}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\APT\" />
     <WCFMetadataStorage Include="Service References\KGBAccountCustomer\" />
     <WCFMetadataStorage Include="Service References\KGBCustomer\" />
     <WCFMetadataStorage Include="Service References\KGBFinanceiro\" />
+    <WCFMetadataStorage Include="Service References\YumService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBFinanceiro\Financeiro.disco" />
+    <None Include="Service References\APT\APTService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBFinanceiro\configuration91.svcinfo" />
+    <None Include="Service References\APT\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBFinanceiro\configuration.svcinfo" />
+    <None Include="Service References\APT\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBFinanceiro\Reference.svcmap">
+    <None Include="Service References\APT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\CustomerWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KGBCustomer\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -150,37 +181,31 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\APT\APTService.disco" />
+    <None Include="Service References\KGBFinanceiro\Financeiro.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\APT\configuration91.svcinfo" />
+    <None Include="Service References\KGBFinanceiro\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\APT\configuration.svcinfo" />
+    <None Include="Service References\KGBFinanceiro\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\APT\Reference.svcmap">
+    <None Include="Service References\KGBFinanceiro\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{34f30979-5240-4098-ac37-4b05be014e7c}</Project>
-      <Name>Data</Name>
-    </ProjectReference>
+    <None Include="Service References\YumService\YumCustomer.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBCustomer\CustomerWebService.disco" />
+    <None Include="Service References\YumService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBCustomer\configuration91.svcinfo" />
+    <None Include="Service References\YumService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\KGBCustomer\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KGBCustomer\Reference.svcmap">
+    <None Include="Service References\YumService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

@@ -2,7 +2,9 @@
 {
     public enum PortabilityStatus
     {
-        Success = 0,
-        Failed = 1
+        Created = 0,
+        CreateFailed = 1,
+        Processing = 2,
+        Success = 3
     }
 }

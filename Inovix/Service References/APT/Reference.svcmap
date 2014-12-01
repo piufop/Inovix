@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="38aaffb2-120f-4a59-a1fb-99bf75bc0797" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="28059939-fdb7-45c6-9892-a463dba6c585" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,12 +22,12 @@
     <MetadataSource Address="http://localhost:50731/APTService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="APTService.disco" MetadataType="Disco" ID="eb2caaf1-a611-4354-b759-5a1ae4b88b04" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?disco" />
-    <MetadataFile FileName="APTService.xsd" MetadataType="Schema" ID="64fbbaba-5fb0-4124-a34f-5ab62294a7a1" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd0" />
-    <MetadataFile FileName="APTService1.xsd" MetadataType="Schema" ID="84b83734-a30b-4361-aa45-8a55235302c8" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd1" />
-    <MetadataFile FileName="APTService2.xsd" MetadataType="Schema" ID="f9aa65b6-29b2-489e-abfc-4dbd6b566a02" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd2" />
-    <MetadataFile FileName="APTService3.xsd" MetadataType="Schema" ID="c6210245-d1dd-4638-81be-cc2651b1211e" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd3" />
-    <MetadataFile FileName="APTService.wsdl" MetadataType="Wsdl" ID="018c33a0-8e21-447e-a96a-51fbfe8173d4" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?wsdl" />
+    <MetadataFile FileName="APTService.disco" MetadataType="Disco" ID="c5d6afae-7f3e-458a-a81e-4d5eea76e8d5" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?disco" />
+    <MetadataFile FileName="APTService.xsd" MetadataType="Schema" ID="19c133d8-b70a-4ba7-86c0-964cc4c316a6" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd0" />
+    <MetadataFile FileName="APTService1.xsd" MetadataType="Schema" ID="ed347de3-4daf-443e-b39e-d1360b1304a0" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd1" />
+    <MetadataFile FileName="APTService2.xsd" MetadataType="Schema" ID="b921dbdf-6ff4-4439-ae82-e9711391f03b" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd2" />
+    <MetadataFile FileName="APTService3.xsd" MetadataType="Schema" ID="68652258-b3d0-4c95-926f-712def6a7a96" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?xsd=xsd3" />
+    <MetadataFile FileName="APTService.wsdl" MetadataType="Wsdl" ID="f000849d-4d9e-4094-b1ab-9a4c27f98e1f" SourceId="1" SourceUrl="http://localhost:50731/APTService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

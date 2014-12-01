@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="10981497-6954-4519-ab30-6886425127c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e1b5c07-0483-46ef-a515-0448c3d96bf9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://localhost:51170/Asmx/CustomerWebService.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CustomerWebService.wsdl" MetadataType="Wsdl" ID="3592ca26-a097-43df-b843-d2dc96e9c3c3" SourceId="1" SourceUrl="http://localhost:51170/Asmx/CustomerWebService.asmx?wsdl" />
-    <MetadataFile FileName="CustomerWebService.disco" MetadataType="Disco" ID="522f7196-ccbf-4369-abad-10824e126fbf" SourceId="1" SourceUrl="http://localhost:51170/Asmx/CustomerWebService.asmx?disco" />
+    <MetadataFile FileName="CustomerWebService.wsdl" MetadataType="Wsdl" ID="baef2a88-76e5-4184-8220-08c9d64a77b1" SourceId="1" SourceUrl="http://localhost:51170/Asmx/CustomerWebService.asmx?wsdl" />
+    <MetadataFile FileName="CustomerWebService.disco" MetadataType="Disco" ID="f38c8cf5-7c68-4b5d-b138-abfefd4f109f" SourceId="1" SourceUrl="http://localhost:51170/Asmx/CustomerWebService.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

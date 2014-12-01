@@ -6,12 +6,6 @@
       <xsd:import schemaLocation="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IFinanceiro_DoWork_InputMessage">
-    <wsdl:part name="parameters" element="tns:DoWork" />
-  </wsdl:message>
-  <wsdl:message name="IFinanceiro_DoWork_OutputMessage">
-    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
-  </wsdl:message>
   <wsdl:message name="IFinanceiro_ObterStatusFinanceiroCliente_InputMessage">
     <wsdl:part name="parameters" element="tns:ObterStatusFinanceiroCliente" />
   </wsdl:message>
@@ -19,10 +13,6 @@
     <wsdl:part name="parameters" element="tns:ObterStatusFinanceiroClienteResponse" />
   </wsdl:message>
   <wsdl:portType name="IFinanceiro">
-    <wsdl:operation name="DoWork">
-      <wsdl:input wsaw:Action="http://tempuri.org/IFinanceiro/DoWork" message="tns:IFinanceiro_DoWork_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IFinanceiro/DoWorkResponse" message="tns:IFinanceiro_DoWork_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="ObterStatusFinanceiroCliente">
       <wsdl:input wsaw:Action="http://tempuri.org/IFinanceiro/ObterStatusFinanceiroCliente" message="tns:IFinanceiro_ObterStatusFinanceiroCliente_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IFinanceiro/ObterStatusFinanceiroClienteResponse" message="tns:IFinanceiro_ObterStatusFinanceiroCliente_OutputMessage" />
@@ -30,15 +20,6 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IFinanceiro" type="tns:IFinanceiro">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="DoWork">
-      <soap:operation soapAction="http://tempuri.org/IFinanceiro/DoWork" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="ObterStatusFinanceiroCliente">
       <soap:operation soapAction="http://tempuri.org/IFinanceiro/ObterStatusFinanceiroCliente" style="document" />
       <wsdl:input>

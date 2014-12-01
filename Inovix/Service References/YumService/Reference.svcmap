@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ffc54c2e-50e8-489a-9059-0ed17d703ce1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8e39bad-84d9-46a5-88c3-5945bd782c2d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:51170/Wcf/Financeiro.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:1965/YumCustomer.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Financeiro.xsd" MetadataType="Schema" ID="f95b23f7-45ea-4ed5-9647-7d64bf179c84" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd0" />
-    <MetadataFile FileName="Financeiro1.xsd" MetadataType="Schema" ID="7b415dab-c288-4501-9be4-4ff8651818ba" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?xsd=xsd1" />
-    <MetadataFile FileName="Financeiro.wsdl" MetadataType="Wsdl" ID="8ba360cb-eee6-41a1-b18c-f2982ea375ea" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?wsdl" />
-    <MetadataFile FileName="Financeiro.disco" MetadataType="Disco" ID="ed545587-a09e-414d-8963-e9cf5b2d8f58" SourceId="1" SourceUrl="http://localhost:51170/Wcf/Financeiro.svc?disco" />
+    <MetadataFile FileName="YumCustomer.disco" MetadataType="Disco" ID="0f1e1df6-2bce-441e-a1bc-ae275da87258" SourceId="1" SourceUrl="http://localhost:1965/YumCustomer.asmx?disco" />
+    <MetadataFile FileName="YumCustomer.wsdl" MetadataType="Wsdl" ID="d447826e-17ff-48ac-890e-00c51aebe654" SourceId="1" SourceUrl="http://localhost:1965/YumCustomer.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

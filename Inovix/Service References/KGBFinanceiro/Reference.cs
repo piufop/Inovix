@@ -15,12 +15,6 @@ namespace Inovix.KGBFinanceiro {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="KGBFinanceiro.IFinanceiro")]
     public interface IFinanceiro {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFinanceiro/DoWork", ReplyAction="http://tempuri.org/IFinanceiro/DoWorkResponse")]
-        void DoWork();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFinanceiro/DoWork", ReplyAction="http://tempuri.org/IFinanceiro/DoWorkResponse")]
-        System.Threading.Tasks.Task DoWorkAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFinanceiro/ObterStatusFinanceiroCliente", ReplyAction="http://tempuri.org/IFinanceiro/ObterStatusFinanceiroClienteResponse")]
         int ObterStatusFinanceiroCliente(string cpf);
         
@@ -53,14 +47,6 @@ namespace Inovix.KGBFinanceiro {
         
         public FinanceiroClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        public void DoWork() {
-            base.Channel.DoWork();
-        }
-        
-        public System.Threading.Tasks.Task DoWorkAsync() {
-            return base.Channel.DoWorkAsync();
         }
         
         public int ObterStatusFinanceiroCliente(string cpf) {

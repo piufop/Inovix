@@ -27,6 +27,11 @@ namespace APT
 
             PortabilityTicket ticket = portability.SolicitarPortabilidadeNumerica();
 
+            if (ticket.Status == PortabilityStatus.CreateFailed)
+            {
+                ObterRespostaAnatel(ticket.Id);
+            }
+
             return ticket;
         }
 
@@ -38,6 +43,20 @@ namespace APT
         private void ValidateCustomer(Customer customer)
         {
             // Validation stuff.
+        }
+
+        public PortabilityStatus ObterRespostaAnatel(Guid ticketId)
+        {
+            HttpChannel channel = new HttpChannel();
+            ChannelServices.RegisterChannel(channel, false);
+
+            RemotingConfiguration.RegisterWellKnownClientType(
+                Type.GetType("Anatel.Portability, Anatel"),
+                "http://localhost:8080/solicitarPortabilidadeNumerica");
+
+            Portability portability = new Portability();
+
+            return portability.ObterRespostaPortabilidade(ticketId);
         }
     }
 }

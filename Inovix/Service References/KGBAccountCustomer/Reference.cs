@@ -15,12 +15,6 @@ namespace Inovix.KGBAccountCustomer {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="KGBAccountCustomer.IAccountCustomer")]
     public interface IAccountCustomer {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountCustomer/DoWork", ReplyAction="http://tempuri.org/IAccountCustomer/DoWorkResponse")]
-        void DoWork();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountCustomer/DoWork", ReplyAction="http://tempuri.org/IAccountCustomer/DoWorkResponse")]
-        System.Threading.Tasks.Task DoWorkAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAccountCustomer/ObterDadosConta", ReplyAction="http://tempuri.org/IAccountCustomer/ObterDadosContaResponse")]
         Inovix.Data.Account ObterDadosConta(Inovix.Data.Customer customer);
         
@@ -53,14 +47,6 @@ namespace Inovix.KGBAccountCustomer {
         
         public AccountCustomerClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        public void DoWork() {
-            base.Channel.DoWork();
-        }
-        
-        public System.Threading.Tasks.Task DoWorkAsync() {
-            return base.Channel.DoWorkAsync();
         }
         
         public Inovix.Data.Account ObterDadosConta(Inovix.Data.Customer customer) {

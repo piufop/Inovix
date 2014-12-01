@@ -32,8 +32,10 @@
   <xs:element name="PortabilityError" nillable="true" type="tns:PortabilityError" />
   <xs:simpleType name="PortabilityStatus">
     <xs:restriction base="xs:string">
+      <xs:enumeration value="Created" />
+      <xs:enumeration value="CreateFailed" />
+      <xs:enumeration value="Processing" />
       <xs:enumeration value="Success" />
-      <xs:enumeration value="Failed" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="PortabilityStatus" nillable="true" type="tns:PortabilityStatus" />
