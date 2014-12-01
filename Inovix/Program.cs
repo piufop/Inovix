@@ -19,7 +19,7 @@ namespace Inovix
             var customerData = new ConverteCustomer();
             var yum = new YumService.YumCustomerSoapClient();
 
-            var customer = customerData.ConverteCustomerData(customerService.GetCustomerByCpf("322.391.544-38"));
+            var customer = Converter.Convert<KGBCustomer.Customer, Data.Customer>(customerService.GetCustomerByCpf("322.391.544-38"));
 
             if (customer != null)
             {
@@ -30,7 +30,7 @@ namespace Inovix
                     APTServiceClient aptClient = new APTServiceClient();
                     aptClient.SolicitarBilhetePortabilidade(customer, account);
 
-                    //yum.UpdateCustomer((YumService.Customer)customer);
+                    yum.UpdateCustomer(Converter.Convert<Data.Customer, YumService.Customer>(customer));
                 }
                 else
                 {
@@ -41,6 +41,8 @@ namespace Inovix
             {
                 Console.WriteLine("Não foi possível encontrar o usuário!");
             }
+
+            Console.ReadKey();
         }
 
         private static void CriarMassaDados()
