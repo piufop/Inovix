@@ -16,8 +16,7 @@ namespace Inovix
             CriarMassaDados();
             var customerService = new CustomerWebServiceSoapClient();
             var financeiroService = new FinanceiroClient();
-            var accountCustomerClient = new AccountCustomerClient();
-            var customerData = new ConverteCustomer();
+            var accountCustomerClient = new AccountCustomerClient();            
             var yum = new YumService.YumCustomerSoapClient();
 
             var customer = Converter.Convert<KGBCustomer.Customer, Data.Customer>(customerService.GetCustomerByCpf("729.671.170-13"));
