@@ -12,7 +12,7 @@ namespace Inovix
     {
         static void Main(string[] args)
         {
-            CriarDados();
+            CriarMassaDados();
             var customerService = new CustomerWebServiceSoapClient();
             var financeiroService = new FinanceiroClient();
             var accountCustomerClient = new AccountCustomerClient();
@@ -40,7 +40,7 @@ namespace Inovix
             }
         }
 
-        private static void CriarDados()
+        private static void CriarMassaDados()
         {
             RepositorioCustomer repositorioCustomer = new RepositorioCustomer();
             RepositorioAccont repositorioAccont = new RepositorioAccont();
