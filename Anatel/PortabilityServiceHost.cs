@@ -14,10 +14,10 @@ namespace Anatel
             TcpChannel tcpChannel = new TcpChannel(8080);
             ChannelServices.RegisterChannel(tcpChannel, false);
 
-            Portability portability = new Portability();
+            //Portability portability = new Portability();
             
-            ObjRef portRef = RemotingServices.Marshal(portability, "solicitarPortabilidadeNumerica");
-            RemotingConfiguration.RegisterWellKnownServiceType(typeof(Portability), "SolicitarPortabilidadeNumerica", WellKnownObjectMode.Singleton);
+            //ObjRef portRef = RemotingServices.Marshal(portability, "solicitarPortabilidadeNumerica");
+            RemotingConfiguration.RegisterWellKnownServiceType(typeof(Portability), "solicitarPortabilidadeNumerica", WellKnownObjectMode.Singleton);
 
             Console.ReadKey();
         }

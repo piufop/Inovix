@@ -20,7 +20,7 @@ namespace Inovix
             var customerData = new ConverteCustomer();
             var yum = new YumService.YumCustomerSoapClient();
 
-            var customer = Converter.Convert<KGBCustomer.Customer, Data.Customer>(customerService.GetCustomerByCpf("322.391.544-38"));
+            var customer = Converter.Convert<KGBCustomer.Customer, Data.Customer>(customerService.GetCustomerByCpf("729.671.170-13"));
 
             if (customer != null)
             {
@@ -36,7 +36,7 @@ namespace Inovix
                         aptClient.ObterRespostaAnatel(ticket.Id);
                     }
 
-                    Console.WriteLine("Ticket: " + ticket.ToString());
+                    Console.WriteLine("Ticket:\r\n" + ticket.ToString());
 
                     if (ticket.Status == PortabilityStatus.Success)
                     {

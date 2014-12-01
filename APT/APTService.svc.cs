@@ -5,6 +5,7 @@ using System;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Http;
+using System.Runtime.Remoting.Channels.Tcp;
 
 namespace APT
 {
@@ -16,14 +17,20 @@ namespace APT
 
             ValidateAccount(account);
 
-            HttpChannel channel = new HttpChannel();
+            //HttpChannel channel = new HttpChannel();
+            //ChannelServices.RegisterChannel(channel, false);
+
+            //RemotingConfiguration.RegisterWellKnownClientType(
+            //    Type.GetType("Anatel.Portability, Anatel"),
+            //    "http://localhost:8080/solicitarPortabilidadeNumerica");
+
+            //Portability portability = new Portability();
+
+            TcpChannel channel = new TcpChannel();
             ChannelServices.RegisterChannel(channel, false);
-
-            RemotingConfiguration.RegisterWellKnownClientType(
-                Type.GetType("Anatel.Portability, Anatel"),
-                "http://localhost:8080/solicitarPortabilidadeNumerica");
-
-            Portability portability = new Portability();
+            var portability = (Portability)Activator.GetObject(
+                typeof(Portability), "tcp://localhost:8080/solicitarPortabilidadeNumerica"
+                );
 
             PortabilityTicket ticket = portability.SolicitarPortabilidadeNumerica();
 

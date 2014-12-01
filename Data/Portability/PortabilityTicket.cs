@@ -21,7 +21,7 @@ namespace Inovix.Data.Portability
 
         public override string ToString()
         {
-            return string.Format("Id: {0}, Timestamp: {1}, Status: {2}, Error Code: {3}", TimeStamp.ToLocalTime(), Id, Status, ErrorCode );
+            return string.Format("Id: {0} \r\n Timestamp: {1} \r\n Status: {2} \r\n Error Code: {3}", TimeStamp.ToLocalTime(), Id, Status, ErrorCode );
 
         }
     }
