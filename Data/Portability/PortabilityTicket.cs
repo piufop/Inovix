@@ -18,5 +18,11 @@ namespace Inovix.Data.Portability
 
         [DataMember]
         public PortabilityError ErrorCode { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("Id: {0}, Timestamp: {1}, Status: {2}, Error Code: {3}", TimeStamp.ToLocalTime(), Id, Status, ErrorCode );
+
+        }
     }
 }

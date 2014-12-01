@@ -5,6 +5,7 @@ using Inovix.KGBAccountCustomer;
 using Inovix.KGBCustomer;
 using Inovix.KGBFinanceiro;
 using Inovix.Util;
+using Inovix.Data.Portability;
 
 namespace Inovix
 {
@@ -28,9 +29,19 @@ namespace Inovix
                 if (finaceiro == (int)StatusFinanceiro.Apto)
                 {
                     APTServiceClient aptClient = new APTServiceClient();
-                    aptClient.SolicitarBilhetePortabilidade(customer, account);
+                    PortabilityTicket ticket = aptClient.SolicitarBilhetePortabilidade(customer, account);
 
-                    yum.UpdateCustomer(Converter.Convert<Data.Customer, YumService.Customer>(customer));
+                    if (ticket.ErrorCode != PortabilityError.NoError)
+                    {
+                        aptClient.ObterRespostaAnatel(ticket.Id);
+                    }
+
+                    Console.WriteLine("Ticket: " + ticket.ToString());
+
+                    if (ticket.Status == PortabilityStatus.Success)
+                    {
+                        yum.UpdateCustomer(Converter.Convert<Data.Customer, YumService.Customer>(customer));
+                    }
                 }
                 else
                 {
